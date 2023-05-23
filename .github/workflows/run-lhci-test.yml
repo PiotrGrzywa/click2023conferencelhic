@@ -15,7 +15,7 @@ jobs:
         run: yarn
 
       - name: Build application
-          run: yarn run build
+        run: yarn run build
 
       - name: lighthouse mobile audit
-          run: yarn lhci:mobile
+        run: yarn lhci:mobile
