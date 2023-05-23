@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.button {
+  border: none;
+  background: none;
+  border: 1px solid white;
+  font-size: 18px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.tomatoBackground {
+  background-color: #d8482e;
+}
