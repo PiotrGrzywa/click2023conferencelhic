@@ -1,8 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
 import chagneBackgroundColor from './utils/chagneBackgroundColor';
+import myLongRunningFunction from './utils/longRunningFunction';
+
+const newExtraFancyFeature = () => {
+  myLongRunningFunction();
+}
 
 function App() {    
+  newExtraFancyFeature();
+
   return (
     <div className="App">
       <header className="App-header">
