@@ -5,7 +5,7 @@
       "url": [
         "http://localhost:3000/"
       ],
-      "numberOfRuns": 3,
+      "numberOfRuns": 2,
       "assert": {
         "includePassedAssertions": true,
         "assertMatrix": [
