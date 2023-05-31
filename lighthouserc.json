@@ -3,7 +3,8 @@
     "collect": {
       "startServerCommand": "yarn start",
       "url": [
-        "http://localhost:3000/"
+        "http://localhost:3000/",
+        "http://localhost:3000/onas"
       ],
       "numberOfRuns": 3,
       "assert": {
@@ -47,16 +48,24 @@
               "dom-size": ["error", { "maxNumericValue": 1400 }],
 
               "resource-summary:media:size": ["error", { "maxNumericValue": 1 }],
-              "resource-summary:stylesheet:size": ["error", { "maxNumericValue": 21000 }]
+              "resource-summary:stylesheet:size": ["error", { "maxNumericValue": 21000 }],
+              "resource-summary:font:size": ["error", { "maxNumericValue": 65000 }]
             }
           },
           {
             "matchingUrlPattern": "http://localhost:3000/$",
             "assertions": {
-              "resource-summary:image:size": ["error", { "maxNumericValue": 80000 }],
+              "resource-summary:image:size": ["error", { "maxNumericValue": 30000 }],
               "resource-summary:script:size": ["error", { "maxNumericValue": 310000 }],
-              "resource-summary:document:size": ["error", { "maxNumericValue": 21000 }],
-              "resource-summary:font:size": ["error", { "maxNumericValue": 65000 }]
+              "resource-summary:document:size": ["error", { "maxNumericValue": 21000 }]
+            }
+          },
+          {
+            "matchingUrlPattern": "http://localhost:3000/onas$",
+            "assertions": {
+              "resource-summary:image:size": ["error", { "maxNumericValue": 40000 }],
+              "resource-summary:script:size": ["error", { "maxNumericValue": 510000 }],
+              "resource-summary:document:size": ["error", { "maxNumericValue": 31000 }]
             }
           }
         ]
