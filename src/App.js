@@ -1,8 +1,15 @@
 import logo from './szybka.png';
 import './App.css';
 import chagneBackgroundColor from './utils/chagneBackgroundColor';
+import myLongRunningFunction from './utils/longRunningFunction';
 
-function App() {    
+const newExtraFancyFeature = () => {
+  myLongRunningFunction();
+}
+
+function App() {
+  newExtraFancyFeature();
+      
   return (
     <div className="App">
       <header className="App-header">
