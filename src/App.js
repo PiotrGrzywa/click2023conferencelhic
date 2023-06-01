@@ -1,22 +1,29 @@
-import logo from './logo.svg';
+import logo from './szybka.png';
 import './App.css';
 import chagneBackgroundColor from './utils/chagneBackgroundColor';
+import myLongRunningFunction from './utils/longRunningFunction';
 
-function App() {    
+const newExtraFancyFeature = () => {
+  myLongRunningFunction();
+}
+
+function App() {
+  newExtraFancyFeature();
+      
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <h1>
+          SZYBKA Apka
+        </h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://dev.to/piotrgrzywa"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          by Piotr Grzywa
         </a>
         <button className="button" onClick={chagneBackgroundColor}>Change background</button>
       </header>
