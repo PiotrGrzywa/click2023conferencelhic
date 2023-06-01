@@ -1,21 +1,21 @@
 import logo from './szybka.png';
 import './App.css';
 import chagneBackgroundColor from './utils/chagneBackgroundColor';
-// import myLongRunningFunction from './utils/longRunningFunction';
+import myLongRunningFunction from './utils/longRunningFunction';
 
-// const newExtraFancyFeature = () => {
-//   myLongRunningFunction();
-// }
+const newExtraFancyFeature = () => {
+  myLongRunningFunction();
+}
 
 function App() {
-  // newExtraFancyFeature();
+  newExtraFancyFeature();
       
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          SZYBKA Apka test
+          SZYBKA Apka
         </h1>
         <a
           className="App-link"
