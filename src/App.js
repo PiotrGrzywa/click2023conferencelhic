@@ -15,7 +15,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <h1>
-          SZYBKA Apka
+          SZYBKA Apka test
         </h1>
         <a
           className="App-link"
